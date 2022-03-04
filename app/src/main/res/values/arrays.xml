@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="report">
+        <item>This restaurant has wrong information</item>
+        <item>This restaurant no longer operated</item>
+        <item>This restaurant did not exist</item>
+        <item>This restaurant did not accept reservation at all</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>All</item>
+        <item>Active</item>
+        <item>Inactive</item>
+    </string-array>
+
+    <string-array name="requestStatus">
+        <item>All</item>
+        <item>Pending</item>
+        <item>Approved</item>
+        <item>Rejected</item>
+    </string-array>
+
+    <string-array name="requestType">
+        <item>All</item>
+        <item>Add Restaurant(User)</item>
+        <item>Add Restaurant(Owner)</item>
+        <item>Claim Business</item>
+    </string-array>
+
+    <string-array name="role">
+        <item>All</item>
+        <item>User</item>
+        <item>Restaurant Owner</item>
+        <item>Moderator</item>
+    </string-array>
+
+
+    <string-array name="cuisine">
+        <item>Cuisine</item>
+        <item>Asian</item>
+        <item>Cafe</item>
+        <item>Chinese</item>
+        <item>Desserts</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+        <item>Malay</item>
+        <item>Malaysian</item>
+        <item>Steamboat</item>
+        <item>Sushi</item>
+        <item>Thai</item>
+        <item>Vegetarian</item>
+        <item>Western</item>
+    </string-array>
+
+    <string-array name="onScreenReport">
+        <item>Most Viewed Restaurant</item>
+        <item>Most Reservation Made Restaurant</item>
+        <item>Top Rating Restaurant</item>
+    </string-array>
+
+</resources>

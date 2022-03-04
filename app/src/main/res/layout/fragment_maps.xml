@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp">
+
+        <EditText
+            android:id="@+id/edtLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:width="250dp"
+            android:hint="@string/search"
+            android:importantForAccessibility="no"
+            android:textColorHint="#c7c7c7"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_address_background"
+            android:padding="0dp"
+            android:paddingBottom="0dp"
+            android:text="@string/search"
+            android:textColor="@color/white"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/belowlayout"
+        android:layout_below="@id/topLayout"
+        android:layout_marginTop="7dp" />
+
+    <RelativeLayout
+        android:id="@+id/belowlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="14dp"
+            android:layout_toStartOf="@+id/btnReset"
+            android:background="@drawable/button_address_background"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="14dp"
+            android:layout_toStartOf="@+id/btnSubmit"
+            android:background="@drawable/button_address_background"
+            android:text="@string/reset"
+            android:textColor="@color/white"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right|center_horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/button_address_background"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            tools:ignore="TextContrastCheck" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+

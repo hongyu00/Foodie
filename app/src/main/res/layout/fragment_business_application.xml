@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.BusinessApplicationFragment">
+
+
+    <TextView
+        android:id="@+id/baTitle"
+        android:layout_width="282dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="120dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="You are pending for your business to be approved" />
+
+    <TextView
+        android:id="@+id/baDescription"
+        android:layout_width="327dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="24dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baTitle"
+        tools:text="Your request for Restaurant Ali is still in review. Kindly wait patiently as we will inform you about the updates through email or you can know your status here" />
+
+    <TextView
+        android:id="@+id/lblBAReason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="52dp"
+        android:text="Reason:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baDescription"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/baReason"
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:textAlignment="center"
+        android:textColor="@color/main_color"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblBAReason"
+        app:layout_constraintStart_toEndOf="@+id/lblBAReason"
+        app:layout_constraintTop_toTopOf="@+id/lblBAReason"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Your SSM Certificate is not accurate" />
+
+    <Button
+        android:id="@+id/btnBA"
+        android:layout_width="249dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/button_background"
+        android:text="Button"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baReason" />
+</androidx.constraintlayout.widget.ConstraintLayout>

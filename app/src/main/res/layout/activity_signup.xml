@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.signupActivity">
+
+    <TextView
+        android:id="@+id/lblHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_here"
+        android:textColor="@color/main_color"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <android.widget.Button-->
+    <!--        android:id="@+id/btnCreateAcc"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="47dp"-->
+    <!--        android:layout_marginStart="64dp"-->
+    <!--        android:layout_marginTop="64dp"-->
+    <!--        android:layout_marginEnd="64dp"-->
+    <!--        android:background="@drawable/button_background"-->
+    <!--        android:text="Create"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="1.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/edtCreateAccCfmPass" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/edtCreateAccName"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="45dp"-->
+    <!--        android:layout_marginStart="32dp"-->
+    <!--        android:layout_marginTop="38dp"-->
+    <!--        android:layout_marginEnd="32dp"-->
+    <!--        android:background="@drawable/edit_text_background"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="Name"-->
+    <!--        android:inputType="textCapWords"-->
+    <!--        android:maxLength="255"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/lblCreateAccount" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/edtCreateAccEmail"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="45dp"-->
+    <!--        android:layout_marginStart="32dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginEnd="32dp"-->
+    <!--        android:background="@drawable/edit_text_background"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="Email Address"-->
+    <!--        android:inputType="textEmailAddress"-->
+    <!--        android:maxLength="50"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/edtCreateAccName" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/edtCreateAccPhone"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="45dp"-->
+    <!--        android:layout_marginStart="32dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginEnd="32dp"-->
+    <!--        android:background="@drawable/edit_text_background"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="Phone"-->
+    <!--        android:inputType="phone"-->
+    <!--        android:maxLength="20"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/edtCreateAccEmail" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/edtCreateAccPass"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="45dp"-->
+    <!--        android:layout_marginStart="32dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginEnd="32dp"-->
+    <!--        android:background="@drawable/edit_text_background"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="Password"-->
+    <!--        android:inputType="textPassword"-->
+    <!--        android:maxLength="50"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/edtCreateAccPhone" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/edtCreateAccCfmPass"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="45dp"-->
+    <!--        android:layout_marginStart="32dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginEnd="32dp"-->
+    <!--        android:background="@drawable/edit_text_background"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="Confirm Password"-->
+    <!--        android:inputType="textPassword"-->
+    <!--        android:maxLength="50"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/edtCreateAccPass" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/lblCreateAccount"-->
+    <!--        android:layout_width="248dp"-->
+    <!--        android:layout_height="66dp"-->
+    <!--        android:layout_marginTop="100dp"-->
+    <!--        android:text="Create Account"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textColor="#302D2D"-->
+    <!--        android:textSize="24sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imgReturn"-->
+    <!--        android:layout_width="57dp"-->
+    <!--        android:layout_height="31dp"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:srcCompat="?attr/actionModeCloseDrawable" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

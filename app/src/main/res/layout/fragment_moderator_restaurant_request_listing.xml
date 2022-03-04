@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ModeratorRestaurantRequestListingFragment">
+
+
+    <Spinner
+        android:id="@+id/spRequestType"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:entries="@array/requestType"
+        app:layout_constraintBottom_toBottomOf="@+id/spRequestStatus"
+        app:layout_constraintStart_toEndOf="@+id/spRequestStatus"
+        app:layout_constraintTop_toTopOf="@+id/spRequestStatus"
+        tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+    <Spinner
+        android:id="@+id/spRequestStatus"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:entries="@array/requestStatus"
+        app:layout_constraintBottom_toBottomOf="@+id/textView96"
+        app:layout_constraintStart_toEndOf="@+id/textView96"
+        app:layout_constraintTop_toTopOf="@+id/textView96"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/lblRecords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRequestDate"
+        tools:text="8 record(s)" />
+
+    <ImageView
+        android:id="@+id/imgReturn23"
+        android:layout_width="57dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <TextView
+        android:id="@+id/textView96"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Filter By:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgReturn23" />
+
+    <TextView
+        android:id="@+id/textView97"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:text="Sort By:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spRequestStatus" />
+
+    <Button
+        android:id="@+id/btnRequestDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/edit_text_for_address"
+        android:text="Date"
+        app:layout_constraintBottom_toBottomOf="@+id/textView97"
+        app:layout_constraintStart_toEndOf="@+id/textView97"
+        app:layout_constraintTop_toTopOf="@+id/textView97" />
+
+    <View
+        android:id="@+id/divider19"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblRecords" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRequest"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider19"
+        tools:listitem="@layout/item_restaurant_request" />
+
+    <Button
+        android:id="@+id/btnRestaurantID"
+        android:layout_width="146dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/edit_text_for_address"
+        android:text="Restaurant ID"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRequestDate"
+        app:layout_constraintStart_toEndOf="@+id/btnRequestDate"
+        app:layout_constraintTop_toTopOf="@+id/btnRequestDate" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ReviewFragment">
+
+    <android.widget.Button
+        android:id="@+id/btnSubmitReview"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/button_background"
+        android:text="Submit Review"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchAnonymous" />
+
+    <ImageView
+        android:id="@+id/imgReturn4"
+        android:layout_width="57dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:progressBackgroundTint="#D3D3D3"
+        android:progressTint="#FFC922"
+        android:secondaryProgressTint="#FFC922"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblReview" />
+
+    <TextView
+        android:id="@+id/lblReview"
+        android:layout_width="326dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:text="How many stars would you like to give Restaurant Ah Meng?"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgReturn4" />
+
+    <EditText
+        android:id="@+id/edtReviewDescription"
+        android:layout_width="327dp"
+        android:layout_height="237dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/wide_edittext_background"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Write something about this restaurant!"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+    <Switch
+        android:id="@+id/switchAnonymous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:text="Post Anonymously?"
+        android:theme="@style/SwitchCompatTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtReviewDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

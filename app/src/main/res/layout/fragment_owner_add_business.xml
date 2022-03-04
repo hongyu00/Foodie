@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.OwnerAddBusinessFragment">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ownerAddRestaurantLogo"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="8dp"
+                    android:background="#CCC"
+                    android:cropToPadding="true"
+                    android:importantForAccessibility="no"
+                    android:importantForAutofill="no"
+                    android:padding="1dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView42"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toTopOf="@+id/textView42" />
+
+                <ImageView
+                    android:id="@+id/ownerAddRestaurantSurroundingImage"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="8dp"
+                    android:background="#CCC"
+                    android:cropToPadding="true"
+                    android:importantForAccessibility="no"
+                    android:importantForAutofill="no"
+                    android:padding="1dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView43"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toTopOf="@+id/textView43" />
+
+                <ImageView
+                    android:id="@+id/ownerAddRestaurantSSM"
+                    android:layout_width="0dp"
+                    android:layout_height="500dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#CCC"
+                    android:cropToPadding="true"
+                    android:importantForAccessibility="no"
+                    android:importantForAutofill="no"
+                    android:padding="1dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+                <ImageView
+                    android:id="@+id/btnReturn2"
+                    android:layout_width="57dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="?attr/actionModeCloseDrawable" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Please Fill In Your Restaurant Details"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnReturn2" />
+
+                <Button
+                    android:id="@+id/btnOwnerAddRestaurantSubmit"
+                    android:layout_width="267dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="64dp"
+                    android:layout_marginBottom="32dp"
+                    android:background="@drawable/button_background"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ownerAddRestaurantRequestDescription" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="128dp" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="Restaurant Name"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="52dp"
+                    android:text="Cuisine"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                <EditText
+                    android:id="@+id/ownerAddRestaurantName"
+                    android:layout_width="212dp"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/wide_edittext_background"
+                    android:ems="10"
+                    android:hint="Restaurant Ah Meng"
+                    android:inputType="textPersonName|textCapWords"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView22"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toTopOf="@+id/textView22" />
+
+                <Spinner
+                    android:id="@+id/ownerAddRestaurantCuisine"
+                    android:layout_width="216dp"
+                    android:layout_height="57dp"
+                    android:layout_marginStart="8dp"
+                    android:entries="@array/cuisine"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView28"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toTopOf="@+id/textView28" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="94dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="52dp"
+                    android:text="Price Range (RM) / person"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+                <EditText
+                    android:id="@+id/ownerAddRestaurantPriceRange"
+                    android:layout_width="213dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/wide_edittext_background"
+                    android:ems="10"
+                    android:hint="10"
+                    android:inputType="number"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView29"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toTopOf="@+id/textView29"
+                    app:layout_constraintVertical_bias="0.407" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp"
+                    android:text="Address"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+                <Button
+                    android:id="@+id/btnOwnerAddRestaurantSelectLocation"
+                    android:layout_width="210dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/button_address_background"
+                    android:text="Select Location"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView32"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toTopOf="@+id/textView32" />
+
+                <TextView
+                    android:id="@+id/ownerAddRestaurantAddress"
+                    android:layout_width="280dp"
+                    android:layout_height="74dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/address_edittext_background"
+                    android:text="Your address"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.518"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnOwnerAddRestaurantSelectLocation" />
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Contact No"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toBottomOf="@+id/ownerAddRestaurantAddress" />
+
+                <EditText
+                    android:id="@+id/ownerAddRestaurantContactNo"
+                    android:layout_width="210dp"
+                    android:layout_height="51dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/wide_edittext_background"
+                    android:ems="10"
+                    android:hint="0123456789"
+                    android:inputType="phone"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView39"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toTopOf="@+id/textView39" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="68dp"
+                    android:text="Operating Hour"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+                <EditText
+                    android:id="@+id/ownerAddRestaurantOperatingHour"
+                    android:layout_width="210dp"
+                    android:layout_height="102dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/wide_edittext_background"
+                    android:ems="10"
+                    android:hint="Mon - Sun 8am - 10pm"
+                    android:inputType="none|textMultiLine"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView40"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toTopOf="@+id/textView40" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="112dp"
+                    android:text="Description"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+                <EditText
+                    android:id="@+id/ownerAddRestaurantDescription"
+                    android:layout_width="213dp"
+                    android:layout_height="123dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/wide_edittext_background"
+                    android:ems="10"
+                    android:hint="Your description"
+                    android:inputType="textMultiLine"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView41"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toTopOf="@+id/textView41" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="164dp"
+                    android:text="Restaurant Logo"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="99dp"
+                    android:layout_height="69dp"
+                    android:layout_marginTop="180dp"
+                    android:text="Restaurant Surrounding Image"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="SSM Certificate"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView83" />
+
+                <TextView
+                    android:id="@+id/textView83"
+                    android:layout_width="320dp"
+                    android:layout_height="86dp"
+                    android:layout_marginTop="32dp"
+                    android:text="Please attach your SSM Certificate to prove that you are the owner of this restaurant"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ownerAddRestaurantSurroundingImage" />
+
+                <TextView
+                    android:id="@+id/textView85"
+                    android:layout_width="100dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Description (optional)"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ownerAddRestaurantSSM" />
+
+                <EditText
+                    android:id="@+id/ownerAddRestaurantRequestDescription"
+                    android:layout_width="348dp"
+                    android:layout_height="123dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/wide_edittext_background"
+                    android:ems="10"
+                    android:hint="Any information that you would like to tell us can write here"
+                    android:inputType="textMultiLine"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView85" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

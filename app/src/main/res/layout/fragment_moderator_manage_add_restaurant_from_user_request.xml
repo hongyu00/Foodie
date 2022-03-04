@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ModeratorManageAddRestaurantFromUserRequestFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/requesterImg3"
+                    android:layout_width="81dp"
+                    android:layout_height="78dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#CCC"
+                    android:cropToPadding="true"
+                    android:importantForAccessibility="no"
+                    android:padding="1dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider40"
+                    tools:ignore="ImageContrastCheck"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <ImageView
+                    android:id="@+id/imgReturn25"
+                    android:layout_width="57dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="?attr/actionModeCloseDrawable" />
+
+                <TextView
+                    android:id="@+id/lbluserNameRequest22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Requester"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/requesterImg3"
+                    app:layout_constraintTop_toTopOf="@+id/requesterImg3" />
+
+                <View
+                    android:id="@+id/divider40"
+                    android:layout_width="409dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgReturn25" />
+
+                <TextView
+                    android:id="@+id/userNameRequest2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@+id/lbluserNameRequest22"
+                    app:layout_constraintStart_toEndOf="@+id/lbluserNameRequest22"
+                    app:layout_constraintTop_toTopOf="@+id/lbluserNameRequest22"
+                    tools:text="Chew Hong Yu" />
+
+                <TextView
+                    android:id="@+id/lblrequestTypeAddRestaurant22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Request Type:"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/requesterImg3"
+                    app:layout_constraintTop_toBottomOf="@+id/lbluserNameRequest22" />
+
+                <TextView
+                    android:id="@+id/requestTypeAddRestaurant2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@+id/lblrequestTypeAddRestaurant22"
+                    app:layout_constraintStart_toEndOf="@+id/lblrequestTypeAddRestaurant22"
+                    app:layout_constraintTop_toTopOf="@+id/lblrequestTypeAddRestaurant22"
+                    tools:text="Add Restaurant(User)" />
+
+                <View
+                    android:id="@+id/divider41"
+                    android:layout_width="409dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/requesterImg3" />
+
+                <ImageView
+                    android:id="@+id/restaurantLogoRequest2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblRestaurantLogoRequest2"
+                    tools:src="@tools:sample/avatars" />
+
+                <ImageView
+                    android:id="@+id/restaurantSurrImgRequest2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/restaurantLogoRequest2"
+                    app:layout_constraintStart_toEndOf="@+id/restaurantLogoRequest2"
+                    app:layout_constraintTop_toBottomOf="@+id/lblRestaurantSurrImgRequest2"
+                    tools:src="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/lblRestaurantLogoRequest2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Restaurant Logo"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider41" />
+
+                <TextView
+                    android:id="@+id/lblRestaurantSurrImgRequest2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="38dp"
+                    android:text="Restaurant Surrounding Image"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@+id/lblRestaurantLogoRequest2"
+                    app:layout_constraintStart_toEndOf="@+id/lblRestaurantLogoRequest2"
+                    app:layout_constraintTop_toTopOf="@+id/lblRestaurantLogoRequest2"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/lblRestaurantNameRequest2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="28dp"
+                    android:text="Restaurant Name"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline13"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/restaurantLogoRequest2" />
+
+                <TextView
+                    android:id="@+id/restaurantNameRequest2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/main_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/lblRestaurantNameRequest2"
+                    app:layout_constraintStart_toEndOf="@+id/lblRestaurantNameRequest2"
+                    app:layout_constraintTop_toTopOf="@+id/lblRestaurantNameRequest2"
+                    tools:text="Restaurant Lau Heong" />
+
+                <TextView
+                    android:id="@+id/lblCuisineRequest2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Cuisine"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline13"
+                    app:layout_constraintTop_toBottomOf="@+id/lblRestaurantNameRequest2" />
+
+                <TextView
+                    android:id="@+id/cuisineRequest2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/main_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/lblCuisineRequest2"
+                    app:layout_constraintStart_toStartOf="@+id/guideline13"
+                    app:layout_constraintTop_toTopOf="@+id/lblCuisineRequest2"
+                    tools:text="Chinese" />
+
+                <TextView
+                    android:id="@+id/lblAddressRequest2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Address"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline13"
+                    app:layout_constraintTop_toBottomOf="@+id/lblCuisineRequest2" />
+
+                <TextView
+                    android:id="@+id/addressRequest2"
+                    android:layout_width="223dp"
+                    android:layout_height="79dp"
+                    android:layout_marginStart="8dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/main_color"
+                    app:layout_constraintStart_toStartOf="@+id/guideline13"
+                    app:layout_constraintTop_toTopOf="@+id/lblAddressRequest2"
+                    tools:text="95, Jalan 1/5A, Taman Melati, Setapak, 53100, Kuala Lumpur" />
+
+                <TextView
+                    android:id="@+id/lblContactNumberRequest2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="68dp"
+                    android:text="Contact Number"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline13"
+                    app:layout_constraintTop_toBottomOf="@+id/lblAddressRequest2" />
+
+                <TextView
+                    android:id="@+id/contactNumberRequest2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/main_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/lblContactNumberRequest2"
+                    app:layout_constraintStart_toStartOf="@+id/guideline13"
+                    app:layout_constraintTop_toTopOf="@+id/lblContactNumberRequest2"
+                    tools:text="0189769192" />
+
+                <TextView
+                    android:id="@+id/lblOperatingHourRequest2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Operating Hour"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline13"
+                    app:layout_constraintTop_toBottomOf="@+id/lblContactNumberRequest2" />
+
+                <TextView
+                    android:id="@+id/operatingHourRequest2"
+                    android:layout_width="236dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="8dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/main_color"
+                    app:layout_constraintStart_toStartOf="@+id/guideline13"
+                    app:layout_constraintTop_toTopOf="@+id/lblOperatingHourRequest2"
+                    tools:text="Open daily from 10am to 10pm" />
+
+                <TextView
+                    android:id="@+id/lblPriceRangeRequest2"
+                    android:layout_width="93dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="52dp"
+                    android:text="Price Range (RM) / person"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline13"
+                    app:layout_constraintTop_toBottomOf="@+id/lblOperatingHourRequest2" />
+
+                <TextView
+                    android:id="@+id/priceRangeRequest2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="RM 15"
+                    android:textColor="@color/main_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/lblPriceRangeRequest2"
+                    app:layout_constraintStart_toStartOf="@+id/guideline13"
+                    app:layout_constraintTop_toTopOf="@+id/lblPriceRangeRequest2" />
+
+                <TextView
+                    android:id="@+id/lblAddRestaurantDescriptionRequest2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Description"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="@+id/lblPriceRangeRequest2"
+                    app:layout_constraintTop_toBottomOf="@+id/lblPriceRangeRequest2" />
+
+                <TextView
+                    android:id="@+id/addRestaurantDescriptionRequest2"
+                    android:layout_width="237dp"
+                    android:layout_height="94dp"
+                    android:layout_marginStart="8dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/main_color"
+                    app:layout_constraintStart_toStartOf="@+id/guideline13"
+                    app:layout_constraintTop_toTopOf="@+id/lblAddRestaurantDescriptionRequest2"
+                    tools:text="This is a very good restaurant." />
+
+                <View
+                    android:id="@+id/divider43"
+                    android:layout_width="409dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/addRestaurantDescriptionRequest2" />
+
+                <TextView
+                    android:id="@+id/lblRejectReasonAddRestaurant2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Reject Reason"
+                    android:textColor="@color/black"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider43" />
+
+                <EditText
+                    android:id="@+id/edtRejectReasonAddRestaurant2"
+                    android:layout_width="338dp"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="Reject Reason"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblRejectReasonAddRestaurant2" />
+
+                <Button
+                    android:id="@+id/btnApproveAddRestaurant2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="42dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/button_approve"
+                    android:text="Approve"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline19"
+                    app:layout_constraintTop_toBottomOf="@+id/edtRejectReasonAddRestaurant2"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Button
+                    android:id="@+id/btnRejectAddRestaurant2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="42dp"
+                    android:background="@drawable/button_reject"
+                    android:text="Reject"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="@+id/btnApproveAddRestaurant2"
+                    app:layout_constraintStart_toStartOf="@+id/guideline19"
+                    app:layout_constraintTop_toTopOf="@+id/btnApproveAddRestaurant2" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="136dp" />
+
+                <TextView
+                    android:id="@+id/lblRejectReasonForAddRestaurant2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#FF0000"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblRejectReasonAddRestaurant2"
+                    tools:text="XXX" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

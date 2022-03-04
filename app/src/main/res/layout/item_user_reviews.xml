@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/userReviewDescription"
+        android:layout_width="342dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="This restaurant is very good"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userReviewDate" />
+
+    <RatingBar
+        android:id="@+id/userReviewRatingBar"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:isIndicator="true"
+        android:progressBackgroundTint="#D3D3D3"
+        android:progressTint="#FFC922"
+        android:rating="3"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:secondaryProgressTint="#FFC922"
+        android:transformPivotX="150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/userReviewRestaurantName"
+        app:layout_constraintEnd_toStartOf="@+id/userEditReview"
+        app:layout_constraintTop_toTopOf="@+id/userReviewRestaurantName"
+        app:layout_constraintVertical_bias="0.074" />
+
+    <TextView
+        android:id="@+id/userReviewRestaurantName"
+        android:layout_width="189dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Restaurant Ah Meng" />
+
+    <TextView
+        android:id="@+id/userReviewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="You reviewed this restaurant on 26/09/2021"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userReviewRatingBar" />
+
+    <ImageView
+        android:id="@+id/userEditReview"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/main_color"
+        android:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/edit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

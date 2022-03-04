@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navbusiness"
+    app:startDestination="@id/restaurantFragment">
+
+    <fragment
+        android:id="@+id/restaurantFragment"
+        android:name="my.com.foodie.ui.RestaurantFragment"
+        android:label="fragment_restaurant"
+        tools:layout="@layout/fragment_restaurant" />
+    <fragment
+        android:id="@+id/ownerProfileFragment"
+        android:name="my.com.foodie.ui.OwnerProfileFragment"
+        android:label="fragment_owner_profile"
+        tools:layout="@layout/fragment_owner_profile" />
+    <fragment
+        android:id="@+id/restaurantDetailsOwnerFragment"
+        android:name="my.com.foodie.ui.RestaurantDetailsOwnerFragment"
+        android:label="fragment_restaurant_details_owner"
+        tools:layout="@layout/fragment_restaurant_details_owner" />
+    <fragment
+        android:id="@+id/ownerReviewFragment"
+        android:name="my.com.foodie.ui.OwnerReviewFragment"
+        android:label="fragment_owner_review"
+        tools:layout="@layout/fragment_owner_review" />
+    <fragment
+        android:id="@+id/ownerReservationFragment"
+        android:name="my.com.foodie.ui.OwnerReservationFragment"
+        android:label="fragment_owner_reservation"
+        tools:layout="@layout/fragment_owner_reservation" />
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="my.com.foodie.ui.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="my.com.foodie.ui.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/ownerClaimBusinessFragment"
+        android:name="my.com.foodie.ui.OwnerClaimBusinessFragment"
+        android:label="fragment_owner_claim_business"
+        tools:layout="@layout/fragment_owner_claim_business" />
+    <fragment
+        android:id="@+id/businessApplicationFragment"
+        android:name="my.com.foodie.ui.BusinessApplicationFragment"
+        android:label="fragment_business_application"
+        tools:layout="@layout/fragment_business_application" />
+    <fragment
+        android:id="@+id/ownerAddBusinessFragment"
+        android:name="my.com.foodie.ui.OwnerAddBusinessFragment"
+        android:label="fragment_owner_add_business"
+        tools:layout="@layout/fragment_owner_add_business" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="my.com.foodie.ui.MapsFragment"
+        android:label="MapsFragment" />
+    <fragment
+        android:id="@+id/imageFragment"
+        android:name="my.com.foodie.ui.ImageFragment"
+        android:label="fragment_image"
+        tools:layout="@layout/fragment_image" />
+    <fragment
+        android:id="@+id/ownerManageReservationFragment"
+        android:name="my.com.foodie.ui.OwnerManageReservationFragment"
+        android:label="fragment_owner_manage_reservation"
+        tools:layout="@layout/fragment_owner_manage_reservation" />
+    <fragment
+        android:id="@+id/ownerReportListFragment"
+        android:name="my.com.foodie.ui.OwnerReportListFragment"
+        android:label="fragment_owner_report_list"
+        tools:layout="@layout/fragment_owner_report_list" />
+</navigation>
